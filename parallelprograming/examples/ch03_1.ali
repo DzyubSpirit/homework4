@@ -1,0 +1,15 @@
+V "GNAT Lib v6"
+M P W=b
+P ZX
+
+RN
+
+U ch03_1%b		ch03_1.adb		474e3483 NE OO SU
+
+D ch03_1.adb		20160906102716 474e3483 ch03_1%b
+D system.ads		20160115095759 6326c08a system%s
+X 1 ch03_1.adb
+3U11*Ch03_1 3b11 13l5 13t11
+5I12 RESTRICTED_RANGE{integer} 7r26
+7i4 Restricted_Variable{5I12} 10m4 11m4 12m4
+

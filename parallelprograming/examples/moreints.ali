@@ -1,0 +1,62 @@
+V "GNAT Lib v6"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U moreints%b		moreints.adb		3b6f06fb NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20160115095757 3ffc8e18 ada%s
+D a-except.ads		20160115095759 291912d5 ada.exceptions%s
+D a-inteio.ads		20160115095800 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20160115095800 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160115095757 119b8fb3 ada.streams%s
+D a-tags.ads		20160115095758 01f5e3ef ada.tags%s
+D a-textio.ads		20160115095758 386df5d4 ada.text_io%s
+D a-tiinio.ads		20160115095757 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20160115095759 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160115095759 4be8ce1b interfaces%s
+D i-cstrea.ads		20160115095758 e53d8b8e interfaces.c_streams%s
+D moreints.adb		20160906101612 f5497a8b moreints%b
+D system.ads		20160115095759 6326c08a system%s
+D s-crtl.ads		20160115095757 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160115095800 54135002 system.exception_table%s
+D s-ficobl.ads		20160115095800 078245e4 system.file_control_block%s
+D s-parame.ads		20160115095759 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160115095759 14e1eb6c system.soft_links%s
+D s-stache.ads		20160115095759 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160115095800 09bd3940 system.standard_library%s
+D s-stoele.ads		20160115095759 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160115095759 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160115095759 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20160115095759 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|2r6 2r19 3r5 3r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w23 3r22
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 3r9
+166U14*New_Line 12|19s37 20s37 21s37 22s37 28s37 29s37 30s37 31s37 37s37
+. 38s37 39s37 40s37
+242U14*Put 12|19s4 20s4 21s4 22s4 28s4 29s4 30s4 31s4 37s4 38s4 39s4 40s4
+X 8 a-tiinio.ads
+66U14*Put 12|19s23[3|18] 20s23[3|18] 21s23[3|18] 22s23[3|18] 28s23[3|18]
+. 29s23[3|18] 30s23[3|18] 31s23[3|18] 37s23[3|18] 38s23[3|18] 39s23[3|18]
+. 40s23[3|18]
+X 12 moreints.adb
+5U11*MoreInts 5b11 42l5 42t13
+7i4 Index_1{integer} 15m4 19r27 24m4 28r27 33m4 37r27
+8i4 Index_2{integer} 16m4 20r27 25m4 29r27 34m4 38r27
+8i13 Index_3{integer} 17m4 21r27 26m4 30r27 35m4 36r16 39r27
+8i22 Index_4{integer} 18m4 22r27 27m4 31r27 36m4 40r27
+9i4 Cat{integer} 15r15 24r19 25r20 34r15 35r16
+10i4 Dog{integer} 16r15 33r19 35r29
+11i4 Pig{integer} 17r15 18r15 24r25 25r28 26r15 27r15
+11i9 Hog{integer}
+11i14 Sow{integer}
+
