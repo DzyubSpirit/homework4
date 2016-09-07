@@ -1,0 +1,41 @@
+	Wed Sep  7 15:40 2016 Time and Allocation Profiling Report  (Final)
+
+	   Main +RTS -N1 -p -RTS
+
+	total time  =        0.27 secs   (266 ticks @ 1000 us, 1 processor)
+	total alloc = 360,355,880 bytes  (excludes profiling overheads)
+
+COST CENTRE   MODULE  %time %alloc
+
+*.\.resMat    Matrix   50.8   73.3
+listIntArray2 Matrix   25.6    4.4
+main.a        Main     23.7   22.2
+
+
+                                                                         individual     inherited
+COST CENTRE                    MODULE                  no.     entries  %time %alloc   %time %alloc
+
+MAIN                           MAIN                     46           0    0.0    0.0   100.0  100.0
+ main                          Main                    108           0    0.0    0.0     0.0    0.0
+ CAF                           Main                     91           0    0.0    0.0   100.0  100.0
+  main                         Main                     92           1    0.0    0.0   100.0  100.0
+   main.a                      Main                     98           1   23.7   22.2    39.8   24.4
+    listIntArray2              Matrix                   99           1   16.2    2.2    16.2    2.2
+     listIntArray2.botBounds   Matrix                  100           1    0.0    0.0     0.0    0.0
+   *                           Matrix                   93           1    0.0    0.0    60.2   75.6
+    matrixOp                   Matrix                   94           1    0.0    0.0    60.2   75.6
+     *.\                       Matrix                   95           1    0.0    0.0    60.2   75.6
+      *.\.resMat               Matrix                  107           1   50.8   73.3    50.8   73.3
+      *.\.m2                   Matrix                  106           1    0.0    0.0     0.0    0.0
+      *.\.n1                   Matrix                  105           1    0.0    0.0     0.0    0.0
+      listIntArray2            Matrix                  103           1    9.4    2.2     9.4    2.2
+       listIntArray2.botBounds Matrix                  104           1    0.0    0.0     0.0    0.0
+      *.\.(...)                Matrix                  102           1    0.0    0.0     0.0    0.0
+      *.\.n2                   Matrix                  101           1    0.0    0.0     0.0    0.0
+      *.\.(...)                Matrix                   97           1    0.0    0.0     0.0    0.0
+      *.\.m1                   Matrix                   96           1    0.0    0.0     0.0    0.0
+ CAF                           GHC.Conc.Signal          86           0    0.0    0.0     0.0    0.0
+ CAF                           GHC.Event.Thread         81           0    0.0    0.0     0.0    0.0
+ CAF                           GHC.IO.Encoding          79           0    0.0    0.0     0.0    0.0
+ CAF                           GHC.IO.Handle.FD         76           0    0.0    0.0     0.0    0.0
+ CAF                           GHC.IO.Encoding.Iconv    68           0    0.0    0.0     0.0    0.0
