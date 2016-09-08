@@ -4,6 +4,7 @@ import Data.Array
 import Data.List(groupBy, intercalate)
 import Data.Function(on)
 import Control.Parallel.Strategies(using, parList, rpar)
+import Control.DeepSeq
 
 type IntArray2 = Array (Int, Int)
 
@@ -12,17 +13,18 @@ listIntArray2 upBounds = listArray (botBounds, upBounds)
 
 newtype Matrix a = Matrix (IntArray2 a)
 
-instance Num a => Num (Matrix a) where
+instance (Num a, NFData a) => Num (Matrix a) where
   (+) = indOp (+)
   (-) = indOp (-)
   (*) = matrixOp (\a b -> 
           let (_, (n1, m1)) = bounds a
               (_, (n2, m2)) = bounds b
-              resMat = [ sum [ a ! (i, k) * b ! (k, j) 
-                             | k <- [1..m1]
-                             ]
+              resMat = [ let resSum = sum [ a ! (i, k) * b ! (k, j) 
+                                          | k <- [1..m1]
+                                          ]
+                         in resSum `seq` resSum
                        | i <- [1..n1], j <- [1..m2]
-                       ] `using` (parList rpar)
+                       ]
           in if m1 == n2
              then listIntArray2 (n1, m2) resMat
              else error "Matrix.(*) first width must be the same as second height"
