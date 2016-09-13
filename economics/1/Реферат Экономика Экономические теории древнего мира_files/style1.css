@@ -1,0 +1,141 @@
+BODY
+{
+    BACKGROUND-COLOR: #ffffff;
+    FONT-SIZE: 11px;
+    MARGIN-LEFT: 5px;
+    COLOR: #333333;
+    FONT-FAMILY: Tahoma;
+		
+}
+TABLE.top
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px;
+}
+TABLE.bottom
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+}
+TD.color1
+{
+    BACKGROUND-COLOR: #042474;
+}
+TD.back6
+{
+    BACKGROUND-IMAGE: url(/images/back6.gif);
+    BACKGROUND-REPEAT: repeat-y;
+}
+.nba
+{
+    MARGIN-TOP: 0px;
+    MARGIN-BOTTOM: 0px;
+}
+P,OL,LI
+{
+    FONT-SIZE: 12px;
+    MARGIN-LEFT: 0px;
+    MARGIN-TOP: 5px;
+    COLOR: #333333;
+    FONT-FAMILY: Tahoma;
+    LINE-HEIGHT: 140%;
+    
+}
+TD.hsep
+{
+    BACKGROUND-IMAGE: url(/images/hseparator.gif);
+    BACKGROUND-REPEAT: repeat-x;
+}
+P.indl
+{
+    MARGIN-LEFT: 5px;
+    TEXT-ALIGN: justify;
+}
+P.indr
+{
+    MARGIN-RIGHT: 5px;
+}
+TD.bcns
+{
+    BACKGROUND-POSITION: center top;
+    BACKGROUND-IMAGE: url(/images/fondodegrade.jpg);
+    BACKGROUND-REPEAT: no-repeat;
+}
+TD.back9
+{
+    BACKGROUND-POSITION: center top;
+    BACKGROUND-IMAGE: url(images/back9.gif);
+    BACKGROUND-REPEAT: repeat-y;
+}
+
+TD.prise{
+padding:10px;
+FONT-SIZE: 11px;
+MARGIN-LEFT: 5px;
+COLOR: #333333;
+FONT-FAMILY: Tahoma;
+}
+
+
+TABLE.middle
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px;
+}
+P.indl2
+{
+    MARGIN-LEFT: 10px;
+}
+.bordered
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+}
+IMG.lbm
+{
+    MARGIN-BOTTOM: 5px;
+    MARGIN-LEFT: 10px;
+}
+
+h1
+{
+    FONT-SIZE: 15px;
+    MARGIN-LEFT: 5px;
+    COLOR: #042474;
+    FONT-FAMILY: Tahoma;
+    TEXT-ALIGN: center;
+    MARGIN-TOP: 30px;
+ }
+
+h2
+{
+    FONT-SIZE: 13px;
+    MARGIN-LEFT: 5px;
+    COLOR: #042474;
+    FONT-FAMILY: Tahoma;
+}
+
+h3
+{
+    FONT-SIZE: 11px;
+    MARGIN-LEFT: 5px;
+    COLOR: #042474;
+    FONT-FAMILY: Tahoma;
+}
+
+a
+{
+    FONT-SIZE: 11px;
+    MARGIN-LEFT: 0px;
+    COLOR: #333333;
+    FONT-FAMILY: Tahoma;
+}
+
