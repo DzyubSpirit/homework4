@@ -1,0 +1,52 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV SPARK_05
+
+U vec_mat_mult%b	vec_mat_mult.adb	3fa51b9a NE OO PK GE IU
+
+U vec_mat_mult%s	vec_mat_mult.ads	0f673f2d BN EE NE OO PK GE IU
+W matrix%s		matrix.adb		matrix.ali
+W matrix_mult%s		matrix_mult.adb		matrix_mult.ali
+W vector%s		vector.adb		vector.ali
+
+D matrix.ads		20160915213615 1c1cb795 matrix%s
+D matrix.adb		20160915213345 3ca238cc matrix%b
+D matrix_mult.ads	20160915214956 5a0f3734 matrix_mult%s
+D matrix_mult.adb	20160915220429 7995d5ba matrix_mult%b
+D system.ads		20160115095759 6326c08a system%s
+D vec_mat_mult.ads	20160915232529 437ca7c5 vec_mat_mult%s
+D vec_mat_mult.adb	20160915225549 7cd9bc5f vec_mat_mult%b
+D vector.ads		20160915232641 0a081849 vector%s
+D vector.adb		20160915232928 7ccbb278 vector%b
+X 1 matrix.ads
+5k9*matrix 9e11 6|1w14
+6K11 W[8|3] 6|8r30[3|7[6|7]] 8r73[3|9[6|7]] 7|2r30[3|7[6|7]] 2r73[3|9[6|7]]
+. 5r15[3|9[6|7]]
+7A8 MATRIX(8|4A8[6[3|8[6|7]]])<6|3I8> 6|8r53[3|8[6|7]] 7|2r53[3|8[6|7]] 3r14[3|7[6|7]]
+. 4r16[3|9[6|7]]
+X 3 matrix_mult.ads
+6k9*MATRIX_MULT 11e16 6|1w22 7r21
+7K11 F[1|5] 6|8r28[7] 7|2r28[6|7] 3r12[6|7]
+8K11 S[1|5] 6|8r51[7] 7|2r51[6|7]
+9K11 T[1|5] 6|8r71[7] 7|2r71[6|7] 4r14[6|7] 5r13[6|7]
+10V12 mult{1|7A8[9[6|7]]} 7|8s16[6|7]
+X 6 vec_mat_mult.ads
+3I8 VEC_SIZE 7r44
+4I8 MAT_WIDTH 7r54
+5k9*VEC_MAT_MULT 3z8 4z8 9l5 9e17 7|1b14 12l5 12t17
+6I8*ONE_RANGE<short_short_integer> 7r33
+7K11*MM[3|6] 8r25 8r48 8r68 7|2r25 2r48 2r68 3r9 4r11 5r10 8r13
+8V12*mult{8|4A8[1|6[3|9[6|7]]]} 8>17 8>40 7|2b12 11l7 11t11
+8a17 vec{8|4A8[1|6[3|7[6|7]]]} 7|2b17 7r14
+8a40 mat{1|7A8[3|8[6|7]]} 7|2b40 8r25
+X 7 vec_mat_mult.adb
+3a5 m1{1|7A8[3|7[6|7]]} 7m5 8r21
+4a5 mres{1|7A8[3|9[6|7]]} 8m5 9r12
+5a5 res{8|4A8[1|6[3|9[6|7]]]} 9m5 10r12
+X 8 vector.ads
+3k9*vector 6|1w6 8|7e11
+4A8 VECTOR(integer)<6|4I8> 6|8r32[1|6[3|7[6|7]]] 8r75[1|6[3|9[6|7]]] 7|2r32[1|6[3|7[6|7]]]
+. 2r75[1|6[3|9[6|7]]] 5r17[1|6[3|9[6|7]]]
+

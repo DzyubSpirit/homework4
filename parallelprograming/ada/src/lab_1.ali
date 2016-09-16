@@ -1,0 +1,139 @@
+V "GNAT Lib v6"
+M P W=b
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_DYNAMIC_CODE
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_TASKS=1+
+
+U lab_1%b		lab_1.adb		de543775 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.discrete_random%s
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W data%s		data.adb		data.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20160115095757 3ffc8e18 ada%s
+D a-except.ads		20160115095759 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160115095800 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20160115095758 bb51c45a ada.numerics%s
+D a-nudira.ads		20160115095758 2fef2912 ada.numerics.discrete_random%s
+D a-nudira.adb		20160115095758 e57ce22b ada.numerics.discrete_random%b
+D a-reatim.ads		20160115095757 428ef5f7 ada.real_time%s
+D a-stream.ads		20160115095757 119b8fb3 ada.streams%s
+D a-tags.ads		20160115095758 01f5e3ef ada.tags%s
+D a-textio.ads		20160115095758 386df5d4 ada.text_io%s
+D a-tiinau.ads		20160115095757 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160115095757 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160115095757 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160115095759 f9eb8f06 ada.unchecked_conversion%s
+D data.ads		20160916072401 0faa79e8 data%s
+D data.adb		20160916082745 e72cf638 data%b
+D interfac.ads		20160115095759 4be8ce1b interfaces%s
+D i-c.ads		20160115095759 5421119b interfaces.c%s
+D i-cstrea.ads		20160115095758 e53d8b8e interfaces.c_streams%s
+D lab_1.adb		20160916082639 e993bb49 lab_1%b
+D system.ads		20160115095759 6326c08a system%s
+D s-atacco.ads		20160115095757 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20160115095757 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160115095800 54135002 system.exception_table%s
+D s-ficobl.ads		20160115095800 078245e4 system.file_control_block%s
+D s-imguns.ads		20160115095759 9ff43cf7 system.img_uns%s
+D s-linux.ads		20160115095759 2fda6ad1 system.linux%s
+D s-multip.ads		20160115095759 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20160622212413 1dcf75d4 system.os_constants%s
+D s-osinte.ads		20160115095757 64f6e3c7 system.os_interface%s
+D s-parame.ads		20160115095759 7e2a0d7f system.parameters%s
+D s-rannum.ads		20160115095759 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20160115095759 20ba1217 system.random_numbers%b
+D s-ransee.ads		20160115095759 01a57b33 system.random_seed%s
+D s-secsta.ads		20160115095759 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160115095759 14e1eb6c system.soft_links%s
+D s-stache.ads		20160115095759 a37c21ec system.stack_checking%s
+D s-stausa.ads		20160115095800 017a0a05 system.stack_usage%s
+D s-stalib.ads		20160115095800 09bd3940 system.standard_library%s
+D s-stoele.ads		20160115095759 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20160115095759 2b3f8252 system.task_info%s
+D s-taspri.ads		20160115095759 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20160115095800 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20160115095800 0766baa7 system.tasking%s
+D s-tassta.ads		20160115095758 70812003 system.tasking.stages%s
+D s-traent.ads		20160115095759 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160115095759 9d58a4c0 system.unsigned_types%s
+D s-valuns.ads		20160115095757 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20160115095759 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 20|1r6 2r5
+X 6 a-nudira.adb
+51V16 Random[32|83]{integer} 33|392b13[16|132[20|7]]
+X 10 a-textio.ads
+49K13*Text_IO 471e16 20|1w10 2r9
+166U14*New_Line 20|20s5 23s5 26s5 29s5 32s5 43s5 46s5 49s5 52s5 55s5 66s5
+. 69s5 72s5 75s5 78s5
+242U14*Put 20|19s5 22s5 25s5 28s5 31s5 42s5 45s5 48s5 51s5 54s5 65s5 68s5
+. 71s5 74s5 77s5 82s3
+X 15 data.ads
+3k9*Data 25e9 20|3w6 7r20
+4A8 VECTOR(integer) 20|14r8[7] 17r8[7] 60r8[7] 61r8[7]
+5A8 MATRIX(4A8[20|7]) 20|15r9[7] 16r9[7] 37r9[7] 38r9[7] 39r9[7] 40r9[7]
+. 62r9[7] 63r9[7]
+13V12 func1{4A8[20|7]} 20|33s12[7]
+14V12 func2{5A8[20|7]} 20|56s12[7]
+15V12 func3{4A8[20|7]} 20|79s12[7]
+17U13 output 20|21s5[7] 30s5[7] 33s5[7] 67s5[7] 70s5[7] 79s5[7]
+18U13 output 20|24s5[7] 27s5[7] 44s5[7] 47s5[7] 50s5[7] 53s5[7] 56s5[7] 73s5[7]
+. 76s5[7]
+20V12 mat_1{5A8[20|7]} 20|15s19[7] 16s19[7] 37s19[7] 38s19[7] 39s19[7] 40s19[7]
+. 62s19[7] 63s19[7]
+21V12 vec_1{4A8[20|7]} 20|14s18[7] 17s18[7] 60s18[7] 61s18[7]
+X 17 interfac.ads
+73M9*Unsigned_32
+76M9*Unsigned_64
+X 20 lab_1.adb
+5U11*lab_1 5b11 83l5 83t10
+6I8 SIZE<short_short_integer> 7r25
+7K11 W[15|3] 8r7
+9t8 f1 13b13 34l7 34t9
+10t8 f2 36b13 57l7 57t9
+11t8 f3 59b13 80l7 80t9
+14a5 a{15|4A8[7]} 21r12 33r18
+15a5 ma{15|5A8[7]} 24r12 33r21
+16a5 me{15|5A8[7]} 27r12 33r25
+17a5 b{15|4A8[7]} 30r12 33r29
+37a5 mg{15|5A8[7]} 44r12 56r18
+38a5 mh{15|5A8[7]} 47r12 56r22
+39a5 mk{15|5A8[7]} 50r12 56r26
+40a5 ml{15|5A8[7]} 53r12 56r30
+60a5 p{15|4A8[7]} 67r12 79r18
+61a5 r{15|4A8[7]} 70r12 79r21
+62a5 ms{15|5A8[7]} 73r12 79r24
+63a5 mt{15|5A8[7]} 76r12 79r28
+X 32 s-rannum.ads
+75V13*Random{17|73M9} 33|221i21
+76V13*Random{17|76M9} 33|221i21
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

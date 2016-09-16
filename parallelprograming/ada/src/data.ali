@@ -1,0 +1,153 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U data%b		data.adb		ff045316 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+Z system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U data%s		data.ads		0faa79e8 BN EE NE OO PK GE
+
+D ada.ads		20160115095757 3ffc8e18 ada%s
+D a-except.ads		20160115095759 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160115095800 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20160115095758 bb51c45a ada.numerics%s
+D a-nudira.ads		20160115095758 2fef2912 ada.numerics.discrete_random%s
+D a-nudira.adb		20160115095758 e57ce22b ada.numerics.discrete_random%b
+D a-stream.ads		20160115095757 119b8fb3 ada.streams%s
+D a-tags.ads		20160115095758 01f5e3ef ada.tags%s
+D a-textio.ads		20160115095758 386df5d4 ada.text_io%s
+D a-tiinau.ads		20160115095757 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160115095757 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160115095757 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160115095759 f9eb8f06 ada.unchecked_conversion%s
+D data.ads		20160916072401 0faa79e8 data%s
+D data.adb		20160916082745 e72cf638 data%b
+D interfac.ads		20160115095759 4be8ce1b interfaces%s
+D i-cstrea.ads		20160115095758 e53d8b8e interfaces.c_streams%s
+D system.ads		20160115095759 6326c08a system%s
+D s-crtl.ads		20160115095757 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160115095800 54135002 system.exception_table%s
+D s-ficobl.ads		20160115095800 078245e4 system.file_control_block%s
+D s-parame.ads		20160115095759 7e2a0d7f system.parameters%s
+D s-rannum.ads		20160115095759 99ade2f2 system.random_numbers%s
+D s-soflin.ads		20160115095759 14e1eb6c system.soft_links%s
+D s-stache.ads		20160115095759 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160115095800 09bd3940 system.standard_library%s
+D s-stoele.ads		20160115095759 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160115095759 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160115095759 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20160115095759 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 15|3r6 4r5 5r6 94r27 96r28 114r22 130r27 132r22
+X 4 a-numeri.ads
+16K13*Numerics 32e17 15|5r10 114r26 132r26
+X 5 a-nudira.ads
+44k22*Discrete_Random 73e33 15|5w19 114r35 132r35
+48R9 Generator<23|63R9> 15|117r8[114] 135r8[132]
+50V13 Random{integer} 15|122s22[114] 139s17[132]
+53U14 Reset<23|100p14> 15|119s5[114] 137s5[132]
+X 9 a-textio.ads
+49K13*Text_IO 471e16 15|3w10 4r9 94r31 96r32 130r31
+166U14*New_Line 15|102s5
+X 11 a-tiinio.ads
+46k21*Integer_IO 85e27 15|94r39 96r40 130r39
+66U14 Put 15|100s7[94]
+X 14 data.ads
+2I8 SIZE 23r24 24r24 15|11r14 11r26 20r14 20r26 21r16 21r28 31r14 31r26 33r16
+. 33r28 43r14 43r26 44r16 44r28 46r18 46r30 57r14 57r26 60r14 60r26 61r16
+. 61r28 61r42 96r51 99r14 99r26 107r14 107r26 120r14 120r26 121r16 121r28
+. 138r14 138r26
+3k9*Data 2z8 23E8 25l5 25e9 15|7b14 143l5 143t9
+4A8*VECTOR(integer) 8r22 8r51 9r25 9r40 11r20 11r35 13r24 13r57 13r72 15r27
+. 15r61 17r23 21r25 23c8 24r33 15|8r25 8r40 9r10 28r22 28r51 29r10 54r20
+. 54r35 55r10 72r24 72r57 72r72 73r10 86r27 86r61 87r10 93r23 128r25 134r10
+5A8*MATRIX(4A8) 7r25 7r40 8r36 10r25 10r40 13r43 14r37 14r52 15r46 18r23
+. 20r25 24c8 15|17r25 17r40 18r10 28r36 40r25 40r40 41r10 72r43 79r37 79r52
+. 80r10 86r46 105r23 112r25 116r10
+7V13*"*"{5A8} 7>16 7>19 15|40b13 52l8 52t10 75s26 82s20 89s26
+7a16 a{5A8} 15|40b16 47r36
+7a19 b{5A8} 15|40b19 47r46
+8V13*"*"{4A8} 8>16 8>30 15|28b13 38l8 38t10 75s20 89s20
+8a16 a{4A8} 15|28b16 34r28
+8a30 b{5A8} 15|28b30 34r35
+9V13*"+"{4A8} 9>16 9>19 15|8b13 15l8 15t10 75s32 89s15
+9a16 a{4A8} 15|8b16 12r17
+9a19 b{4A8} 15|8b19 12r24
+10V13*"+"{5A8} 10>16 10>19 15|17b13 26l8 26t10 82s15 82s25
+10a16 a{5A8} 15|17b16 22r22
+10a19 b{5A8} 15|17b19 22r32
+11V12*sort{4A8} 11>17 15|54b12 70l7 70t11 75s12 75s34
+11a17 a{4A8} 15|54b17 58r17
+13V12*func1{4A8} 13>18 13>32 13>36 13>51 15|72b12 77l7 77t12
+13a18 a{4A8} 15|72b18 75r17
+13a32 ma{5A8} 15|72b32 75r23
+13a36 me{5A8} 15|72b36 75r28
+13a51 b{4A8} 15|72b51 75r39
+14V12*func2{5A8} 14>18 14>22 14>26 14>30 15|79b12 84l7 84t12
+14a18 mg{5A8} 15|79b18 82r12
+14a22 mh{5A8} 15|79b22 82r17
+14a26 mk{5A8} 15|79b26 82r22
+14a30 ml{5A8} 15|79b30 82r27
+15V12*func3{4A8} 15>18 15>21 15>35 15>39 15|86b12 91l7 91t12
+15a18 p{4A8} 15|86b18 89r13
+15a21 r{4A8} 15|86b21 89r17
+15a35 ms{5A8} 15|86b35 89r23
+15a39 mt{5A8} 15|86b39 89r28
+17U13*output 17>20 15|93b13 103l7 103t13 108s7
+17a20 a{4A8} 15|93b20 100r11
+18U13*output 18>20 15|105b13 110l7 110t13
+18a20 a{5A8} 15|105b20 108r14
+20V12*mat_1{5A8} 15|112b12 126l7 126t12
+21V12*vec_1{4A8} 15|128b12 142l7 142t12
+X 15 data.adb
+9a5 res{14|4A8} 12m7 14r12
+11*9 i{14|2I8} 12r11 12r19 12r26
+18a5 res{14|5A8} 22m9 25r12
+20*9 i{14|2I8} 22r13 22r24 22r34
+21*11 j{14|2I8} 22r16 22r27 22r37
+29a5 res{14|4A8} 32m7 34m9 34r19 37r12
+31*9 i{14|2I8} 32r11 34r13 34r23 34r40
+33*11 j{14|2I8} 34r30 34r37
+41a5 res{14|5A8} 45m9 47m11 47r24 51r12
+43*9 i{14|2I8} 45r13 47r15 47r28 47r38
+44*11 j{14|2I8} 45r16 47r18 47r31 47r51
+46*13 k{14|2I8} 47r41 47r48
+55a5 res{14|4A8} 58m7 62r12 62r21 63m11 63r21 63r34 64m11 64r25 64r34 65m11
+. 65r21 65r30 69r12
+57*9 i{14|2I8} 58r11 58r19
+60i9 i 61r40
+61i11 j 62r16 62r25 63r15 63r25 63r38 64r15 64r29 64r38 65r15 65r25 65r34
+73a5 res{14|4A8} 75m5 76r12
+80a5 res{14|5A8} 82m5 83r12
+87a5 res{14|4A8} 89m5 90r12
+94K13 INT_IO[11|46] 95r9
+96K13 SIZE_IO[11|46] 97r9
+99*9 i{14|2I8} 100r13
+107*9 i{14|2I8} 108r16
+113I13 R1_10{integer} 114r51
+114K13 R[5|44] 115r9
+116a5 res{14|5A8} 122m9 125r12
+117r5 g{5|48R9[114]} 119r11 122r29
+120*9 i{14|2I8} 122r13
+121*11 j{14|2I8} 122r16
+129I13 R1_10{integer} 132r51
+130K13 INT_IO[11|46] 131r9
+132K13 R[5|44] 133r9
+134a5 res{14|4A8} 139m7 141r12
+135r5 g{5|48R9[132]} 137r11 139r24
+138*9 i{14|2I8} 139r11
+

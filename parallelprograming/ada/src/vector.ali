@@ -1,0 +1,29 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV SPARK_05
+
+U vector%b		vector.adb		76c3aa31 NE OO PK GE IL
+
+U vector%s		vector.ads		0a081849 BN EE NE OO PK GE IL
+
+D system.ads		20160115095759 6326c08a system%s
+D vector.ads		20160915232641 0a081849 vector%s
+D vector.adb		20160915232928 7ccbb278 vector%b
+X 2 vector.ads
+2I8 SIZE 4r24 3|5r14 5r26 14r14 14r26
+3k9*vector 2z8 7l5 7e11 3|1b14 19l5 19t11
+4A8*VECTOR(integer)<2I8> 5r26 6r25 6r40 3|2r26 11r25 11r40 12r10
+5V12*mult{integer} 5>17 5>20 3|2b12 9l7 9t11
+5a17 a{4A8} 3|2b17 6r20
+5a20 b{4A8} 3|2b20 6r27
+6V12*sum{4A8} 6>16 6>19 3|11b12 18l7 18t10
+6a16 a{4A8} 3|11b16 15r17
+6a19 b{4A8} 3|11b19 15r24
+X 3 vector.adb
+3i5 res{integer} 6m7 6r14 8r12
+5*9 i{2|2I8} 6r22 6r29
+12a5 res{2|4A8} 15m7 17r12
+14*9 i{2|2I8} 15r11 15r19 15r26
+

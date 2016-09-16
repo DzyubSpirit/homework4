@@ -1,0 +1,27 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV SPARK_05
+
+U matrix%b		matrix.adb		20be8f59 NE OO PK GE IL
+
+U matrix%s		matrix.ads		1614afdc BN EE NE OO PK GE IL
+W vector%s		vector.adb		vector.ali
+
+D matrix.ads		20160915213615 1c1cb795 matrix%s
+D matrix.adb		20160915213345 3ca238cc matrix%b
+D system.ads		20160115095759 6326c08a system%s
+D vector.ads		20160915232641 0a081849 vector%s
+D vector.adb		20160915232928 7ccbb278 vector%b
+X 1 matrix.ads
+3I8 HEIGHT_RANGE 7r24
+4I8 WIDTH_RANGE 6r27
+5k9*matrix 3z8 4z8 9l5 9e11 2|1b14 6l5 6t11
+6K11*W[4|3] 7r41
+7A8*MATRIX(4|4A8[6])<3I8>
+8U13*Main 2|2b13 5l7 5t11
+X 4 vector.ads
+3k9*vector 1|1w6 6r20 4|7e11
+4A8 VECTOR(integer)<1|4I8> 1|7r43[6]
+

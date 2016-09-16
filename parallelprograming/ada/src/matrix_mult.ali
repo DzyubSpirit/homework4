@@ -1,0 +1,42 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV SPARK_05
+
+U matrix_mult%b		matrix_mult.adb		239ae28e NE OO PK GE IU
+
+U matrix_mult%s		matrix_mult.ads		461380a1 BN EE NE OO PK GE IU
+W matrix%s		matrix.adb		matrix.ali
+Z vector%s		vector.adb		vector.ali
+
+D matrix.ads		20160915213615 1c1cb795 matrix%s
+D matrix.adb		20160915213345 3ca238cc matrix%b
+D matrix_mult.ads	20160915214956 5a0f3734 matrix_mult%s
+D matrix_mult.adb	20160915220429 7995d5ba matrix_mult%b
+D system.ads		20160115095759 6326c08a system%s
+D vector.ads		20160915232641 0a081849 vector%s
+D vector.adb		20160915232928 7ccbb278 vector%b
+X 1 matrix.ads
+5k9*matrix 9e11 3|1w6 7r20 8r20 9r20
+7A8 MATRIX(6|4A8[6[3|7]])<3|3I8> 3|10r25[7] 10r41[8] 10r58[9] 4|2r25[3|7]
+. 2r41[3|8] 2r58[3|9] 3r12[3|9]
+X 3 matrix_mult.ads
+3I8 FST_HEIGHT 7r27 9r27 4|5r14 5r32
+4I8 SAME_SIDE 7r39 8r27 4|8r18 8r35
+5I8 SND_WIDTH 8r38 9r39 4|6r16 6r33
+6k9*MATRIX_MULT 3z8 4z8 5z8 11l5 11e16 4|1b14 15l5 15t16
+7K11*F[1|5] 10r23 4|2r23
+8K11*S[1|5] 10r39 4|2r39
+9K11*T[1|5] 10r56 4|2r56 3r10
+10V12*mult{1|7A8[9]} 10>17 10>33 4|2b12 14l7 14t11
+10a17 a{1|7A8[7]} 4|2b17 9r36
+10a33 b{1|7A8[8]} 4|2b33 9r46
+X 4 matrix_mult.adb
+3a5 res{1|7A8[3|9]} 7m9 9m11 9r24 13r12
+5*9 i{3|3I8} 7r13 9r15 9r28 9r38
+6*11 j{3|5I8} 7r16 9r18 9r31 9r51
+8*13 k{3|4I8} 9r41 9r48
+X 6 vector.ads
+4A8 VECTOR(integer)<3|4I8>
+
