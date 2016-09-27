@@ -25,6 +25,24 @@ package body Data is
     return res;
   end "+";
 
+  function "*"(a: in INTEGER; b: in VECTOR) return VECTOR is
+    res: VECTOR;
+  begin
+    for i in SIZE'FIRST..SIZE'LAST loop
+      res(i) := a * b(i);
+    end loop;
+    return res;
+  end "*";
+
+  function "*"(a, b: in VECTOR) return INTEGER is
+    res: INTEGER := 0;
+  begin
+    for i in SIZE'FIRST..SIZE'LAST loop
+      res := res + a(i) * b(i);    
+    end loop;
+    return res;
+  end "*";
+
   function "*"(a: in VECTOR; b: in MATRIX) return VECTOR is
     res: VECTOR;
   begin
@@ -35,6 +53,17 @@ package body Data is
       end loop;
     end loop;
     return res;
+  end "*";
+
+  function "*"(a: in INTEGER; b: in MATRIX) return MATRIX is
+    res: MATRIX;
+  begin
+    for i in SIZE'FIRST..SIZE'LAST loop
+      for j in SIZE'FIRST..SIZE'LAST loop
+        res(i)(j) := b(i)(j) * a;
+      end loop;
+   end loop;  
+   return res;
   end "*";
 
   function "*"(a, b: in MATRIX) return MATRIX is
@@ -69,24 +98,48 @@ package body Data is
     return res;
   end sort;
 
-  function func1(a: in VECTOR; ma, me: in MATRIX; b: in VECTOR) return VECTOR is
-    res: VECTOR;
+  function trans(a: MATRIX) return MATRIX is
+    res: MATRIX;
   begin
-    res := sort(a) * (ma * me) + sort(b);
+    for i in SIZE'FIRST..SIZE'LAST loop
+      for j in SIZE'FIRST..SIZE'LAST loop
+        res(i)(j) := a(j)(i);
+      end loop;
+    end loop;
+    return res;
+  end trans;
+
+  function max(a: MATRIX) return INTEGER is
+    res: INTEGER := a(SIZE'FIRST)(SIZE'FIRST);
+  begin
+    for i in SIZE'FIRST..SIZE'LAST loop
+      for j in SIZE'FIRST..SIZE'LAST loop
+        if (a(i)(j) > res) then
+          res := a(i)(j);
+        end if;
+      end loop;
+    end loop;
+    return res;
+  end max;
+
+  function func1(b, c: in VECTOR; ma, me: in MATRIX) return MATRIX is
+    res: MATRIX;
+  begin
+    res := b * c * (ma * me);
     return res;
   end func1;
 
-  function func2(mg, mh, mk, ml: in MATRIX) return MATRIX is
+  function func2(mk, mh, mf: MATRIX) return MATRIX is
     res: MATRIX;
   begin
-    res := mg + mh * mk + ml;
+    res := trans(mk) * (mh * mf);
     return res;
   end func2;
 
-  function func3(p, r: in VECTOR; ms, mt: in MATRIX) return VECTOR is
+  function func3(mp, mr: in MATRIX; t: in VECTOR) return VECTOR is
     res: VECTOR;
   begin
-    res := (p + r) * (ms * mt);
+    res := max(mp * mr) * t;
     return res;
   end func3;
 

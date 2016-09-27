@@ -10,9 +10,9 @@ package Data is
   function "+"(a, b: in MATRIX) return MATRIX;
   function sort(a: VECTOR) return VECTOR;
 
-  function func1(a: in VECTOR; ma, me: in MATRIX; b: in VECTOR) return VECTOR;
-  function func2(mg, mh, mk, ml: in MATRIX) return MATRIX;
-  function func3(p, r: in VECTOR; ms, mt: in MATRIX) return VECTOR;
+  function func1(b, c: in VECTOR; ma, me: in MATRIX) return MATRIX;
+  function func2(mk, mh, mf: MATRIX) return MATRIX;
+  function func3(mp, mr: in MATRIX; t: in VECTOR) return VECTOR;
 
   procedure output(a: VECTOR);
   procedure output(a: MATRIX);

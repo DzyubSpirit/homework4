@@ -1,82 +1,85 @@
 with ADA.TEXT_IO;
 use ADA.TEXT_IO;
+with System;
+use System;
 with data;
 
 procedure lab_1 is
-  type SIZE is range 1..2;
+  type SIZE is range 1..300;
   package W is new DATA(SIZE);
   use W;
-  task f1;
-  task f2;
-  task f3;
+  task f1 is
+    pragma CPU(1);
+    pragma Priority(8);
+  end f1;
+  task f2 is
+    pragma CPU(0);
+    pragma Priority(4);
+  end f2;
+  task f3 is
+    pragma CPU(1);
+    pragma Priority(System.Default_Priority + 1);
+  end f3;
 
   task body f1 is
-    a: VECTOR := vec_1;
+    b: VECTOR := vec_1;
     ma: MATRIX := mat_1;
     me: MATRIX := mat_1;
-    b: VECTOR := vec_1;
+    c: VECTOR := vec_1;
   begin
-    put("a:");
+    put("b:");
     new_line;
-    output(a);
+    output(b);
     put("ma:");
     new_line;
     output(ma);
     put("me:");
     new_line;
     output(me);
-    put("b:");
+    put("c:");
     new_line;
-    output(b);
+    output(c);
     put("func1");
     new_line;
-    output(func1(a, ma, me, b));
+    output(func1(b, c, ma, me));
   end f1;
 
   task body f2 is
-    mg: MATRIX := mat_1;
-    mh: MATRIX := mat_1;
     mk: MATRIX := mat_1;
-    ml: MATRIX := mat_1;
+    mh: MATRIX := mat_1;
+    mf: MATRIX := mat_1;
   begin
-    put("mg:");
-    new_line;
-    output(mg);
-    put("mh:");
-    new_line;
-    output(mh);
     put("mk:");
     new_line;
     output(mk);
-    put("ml:");
+    put("mh:");
     new_line;
-    output(ml);
+    output(mh);
+    put("mf:");
+    new_line;
+    output(mf);
     put("func2:");
     new_line;
-    output(func2(mg, mh, mk, ml));
+    output(func2(mk, mh, mf));
   end f2;
 
   task body f3 is
-    p: VECTOR := vec_1;
-    r: VECTOR := vec_1;
-    ms: MATRIX := mat_1;
-    mt: MATRIX := mat_1;
+    mp: MATRIX := mat_1;
+    mr: MATRIX := mat_1;
+    t: VECTOR := vec_1;
   begin
-    put("p:");
+    put("mp:");
     new_line;
-    output(p);
-    put("r:");
+    output(mp);
+    put("mr:");
     new_line;
-    output(r);
-    put("ms:");
+    output(mr);
+    put("t:");
     new_line;
-    output(ms);
-    put("mt:");
-    new_line;
-    output(mt);
+    output(t);
     put("func3:");
     new_line;
-    output(func3(p, r, ms, mt));
+    output(func3(mp, mr, t));
   end f3;
 begin
   put("Main program");
