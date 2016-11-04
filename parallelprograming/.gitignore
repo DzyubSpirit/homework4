@@ -1,0 +1,6 @@
+*.class
+*.exe
+*.obj
+*.o
+*.ali
+*.hi
